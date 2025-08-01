@@ -1,0 +1,166 @@
+.header {
+  box-sizing: border-box;
+  display: flex;
+  height: 88px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9fff5;
+
+  &__container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-left: 16px;
+
+    &::after {
+      content: url(/src/img/icons/divider.png);
+      display: none;
+      border-radius: 1px;
+      width: 2px;
+      height: 32px;
+      position: absolute;
+      left: 84px;
+    }
+  }
+
+  &__container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    &::before {
+      content: url(/src/img/icons/divider.png);
+      display: block;
+      border-radius: 1px;
+      width: 2px;
+      height: 32px;
+      position: absolute;
+      right: 132px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background: #ff3e79;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__cps {
+    display: flex;
+    width: 96px;
+    height: 50px;
+    align-items: center;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__tools {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.top-bar {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+  align-items: center;
+  padding: 0;
+  margin: 16px;
+}
+
+.btn-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: #ff3e79;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__img {
+  max-width: 360px;
+  height: auto;
+}
+
+.tablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 100%;
+
+    &__logo {
+      margin-left: 43px;
+    }
+
+    &::after {
+      content: url(/src/img/icons/divider.png);
+      display: block;
+      border-radius: 1px;
+      width: 2px;
+      height: 32px;
+      position: absolute;
+      left: 84px;
+    }
+  }
+
+  .tablet {
+    display: flex;
+  }
+
+  .divid {
+    margin-left: 26px;
+  }
+
+  .btn-item-laptop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+
+  .btn-item-laptop {
+    display: flex;
+    gap: 32px;
+    padding-right: 16px;
+  }
+
+  .btn-item-laptop__text {
+    font-family: 'TTLakes-Medium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    text-align: right;
+    color: #1b1c21;
+  }
+
+  .tablet {
+    display: none;
+  }
+}

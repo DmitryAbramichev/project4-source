@@ -1,0 +1,208 @@
+.service__cards {
+  margin-bottom: 16px;
+}
+
+.servicePrice__tablet {
+  display: none;
+}
+
+.swiperPrice {
+  width: 100%;
+  overflow: hidden;
+}
+
+.service__price {
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.swiper-slide__price {
+  width: 260px;
+  height: 200px;
+  margin-right: 16px;
+}
+
+.swiper-pagination {
+  position: static;
+  margin: 0 auto;
+}
+
+.priceText {
+  font-family: TTLakes-Regular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  color: #1b1c21;
+  padding: 16px;
+}
+
+.priceTitle {
+  display: inline-block;
+  font-family: TTLakes-Medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: #7e7e82;
+  margin-bottom: 2px;
+  margin-top: 16px;
+}
+
+.btn__price {
+  background-color: #ff3e79;
+  min-width: 119px;
+  height: 32px;
+  margin: 0;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  font-family: TTLakes-Bold;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.btn__price:hover {
+  opacity: 0.7;
+}
+
+.order {
+  color: white;
+  margin-right: 17px;
+}
+
+.price__clarification {
+  display: flex;
+
+  max-width: 432px;
+  height: auto;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: TTLakes-Regular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+  color: #1b1c21;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.btn__commerciaOffer {
+  all: unset;
+  display: block;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.btn__commerciaOffer:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.commerciaOffer__text {
+  margin-right: 9px;
+  font-family: TTLakes-Medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1b1c21;
+}
+
+.footer {
+  display: grid;
+  width: 100%;
+  padding: 16px;
+  padding-bottom: 0;
+  column-gap: 16px;
+  font-family: TTLakes-Medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: #7e7e82;
+  opacity: 0.72;
+  &__text {
+    margin-bottom: 16px;
+  }
+}
+
+.footer:last-child {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .servicePrice {
+    display: none;
+  }
+  .service__header {
+    margin-left: 8px;
+    margin-bottom: 16px;
+  }
+  .servicePrice {
+    &__tablet {
+      display: grid;
+      width: 768px;
+      height: 568px;
+      margin-left: 24px;
+    }
+    &__table {
+      display: grid;
+      grid-template-columns: 348px 74px 81px 120px;
+      column-gap: 22px;
+      margin-left: 16px;
+    }
+
+    &__tablet {
+      width: 720px;
+      height: 405px;
+    }
+    &__tableHeader {
+      font-family: TTLakes-Medium;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 114%;
+      color: #7e7e82;
+      opacity: 0.72;
+      margin-bottom: 39px;
+    }
+    &__tableBlock {
+      font-family: TTLakes-Regular;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 129%;
+      letter-spacing: 0.01em;
+      color: #1b1c21;
+      margin-bottom: 47px;
+    }
+    &__tableBtn {
+      margin-bottom: 33px;
+    }
+  }
+  .btn__price {
+    position: static;
+  }
+  .price__clarification {
+    font-family: TTLakes-Regular;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: #1b1c21;
+    width: 421px;
+  }
+  .footer {
+    height: 81px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

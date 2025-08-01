@@ -1,0 +1,52 @@
+// .swiper {
+//   &__technique {
+//     width: 200px;
+//   }
+// }
+
+.swiper-pagination {
+  position: relative;
+  margin: 0 auto;
+}
+
+.serviceTechnique {
+  margin-top: 32px;
+}
+
+.btn__technique {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+
+.swiper__technique {
+  width: 240px;
+  height: 160px;
+  align-items: flex-end;
+  margin-right: 16px;
+}
+
+.technique__text {
+  font-family: TTLakes-Medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1b1c21;
+  margin-left: 16px;
+  margin-bottom: 119px;
+}
+
+@media (min-width: 768px) {
+  .swiper__technique {
+    width: 224px;
+    margin-right: 0px;
+  }
+
+  .service__techniqueBtn {
+    margin-left: 16px;
+  }
+  .swiperTechnique {
+    height: 190px;
+  }
+}

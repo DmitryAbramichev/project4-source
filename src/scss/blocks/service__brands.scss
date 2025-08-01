@@ -1,0 +1,151 @@
+.service {
+  &__header {
+    border-top: 1px solid #d9fff5;
+    background: linear-gradient(90deg, #f8f8f8 0%, #fff 100%);
+    height: 56px;
+  }
+
+  &__title {
+    font-family: TTLakes-Regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #7e7e82;
+    margin-left: 24px;
+  }
+
+  &__cards {
+    padding-left: 16px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+  }
+}
+
+.service__title {
+  margin: 16px;
+}
+
+.swiper__btn {
+  display: flex;
+  border: 2px solid #ff3e79;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 16px;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 240px;
+  height: 69px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-top: 16px;
+}
+
+.brands-logo {
+  margin-left: 16px;
+}
+
+.service__button {
+  display: none;
+}
+.button--container {
+  display: none;
+}
+
+/* Стили пагинации */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #dddddd !important;
+  opacity: 1;
+  margin: 0 8px !important; /* Расстояние между точками */
+}
+
+/* Активная точка */
+.swiper-pagination-bullet-active {
+  background: #b5b6bc !important;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+#content {
+  display: none;
+}
+
+#content.show {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .service__cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .swiperBrands {
+    height: 184px;
+    overflow: hidden;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 16px;
+  }
+  .swiper-slide {
+    width: 222px;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .button--container {
+    display: flex;
+    gap: 8px;
+  }
+  .service__button {
+    all: unset;
+    display: flex;
+    border: none;
+    width: 133px;
+    height: 24px;
+    font-family: TTLakes-Medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+  }
+  .service__button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 1120px) {
+  .swiper-slide {
+    width: 238px;
+  }
+  .swiper-wrapper {
+    column-gap: 32px;
+  }
+}
